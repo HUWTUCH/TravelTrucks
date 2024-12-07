@@ -1,6 +1,7 @@
 import {NavLink} from "react-router-dom";
 import logoImage from '../../assets/images/Logo.png'
-import {Nav, NavHeader} from "../styled-components/styled-components.tsx";
+import {BasketIcon, Nav, NavHeader} from "../styled-components/styled-components.tsx";
+import basketIcon from '../../assets/images/icons/camper-basket.png'
 
 export const NavigateHeader = () => {
     return (
@@ -8,7 +9,10 @@ export const NavigateHeader = () => {
             <img src={logoImage}/>
             <Nav>
                 <NavLink to={'/'} className={({ isActive }) => (isActive ? 'active' : 'noActive')}>Home</NavLink>
-                <NavLink to={'/catalog'} className={({ isActive }) => (isActive ? 'active' : 'noActive')}>Catalog</NavLink>
+                <NavLink to={'/campers'} className={({ isActive }) => (isActive ? 'active' : 'noActive')}>Catalog</NavLink>
+                <NavLink to={'/basket-campers'} className='basketItem'>
+                    <BasketIcon src={basketIcon}/>
+                </NavLink>
             </Nav>
         </NavHeader>
     );

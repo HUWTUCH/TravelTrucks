@@ -1,21 +1,40 @@
-import {Location} from "./CampersLocation/RentalLocation.tsx";
-import {useEffect} from "react";
-import axios from "axios";
+import {CatalogContainer} from "../../components/styled-components/styled-components.tsx";
+import {Sidebar} from "../../components/SidebarFilter";
+import {MainCampers} from "../../components/CatalogCampers";
+import {useState} from "react";
+
+interface Camper {
+    id: number;
+    name: string;
+    price: number;
+    rating: number;
+    location: string;
+    description: string;
+    gallery: { thumb: string; original: string; }[];
+    engine: string;
+    transmission: string;
+    kitchen: boolean;
+    AC: boolean;
+    radio: boolean;
+    gas: boolean;
+    bathroom: boolean;
+    refrigerator: boolean;
+    water: boolean;
+    microwave: boolean;
+    reviews: {
+        reviewer_name: string,
+        reviewer_rating: number,
+        comment: string,
+    }[],
+}
+
 
 export const Catalog = () => {
-        useEffect(() => {
-            async function fetchArticles() {
-                const response = await axios.get(
-                    "https://66b1f8e71ca8ad33d4f5f63e.mockapi.io/campers"
-                );
-                console.log(response.data);
-            }
-
-            fetchArticles();
-        }, []);
+    const [campers, setCampers] = useState<Camper[]>([]);
     return (
-        <>
-            <Location/>
-        </>
+        <CatalogContainer>
+            <Sidebar setCampers={setCampers}/>
+            <MainCampers campers={campers}/>
+        </CatalogContainer>
     );
 }
