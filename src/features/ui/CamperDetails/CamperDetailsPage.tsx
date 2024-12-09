@@ -1,15 +1,15 @@
 import {NavLink, Outlet, useParams} from "react-router-dom";
-import {useFetch} from "../../shared/lib/hooks/use-fetch.tsx";
+import {useFetch} from "../../../shared/lib/hooks/use-fetch.tsx";
 import {
     CamperDetails,
     HeaderDescriptionCamperDetails,
     ImageCamper, Images, OutletFormContainer,
-} from "../../app/styles/styled-components.tsx";
-import like from "../../shared/assets/images/icons/like.svg";
-import starRating from "../../shared/assets/images/icons/star_rating.png";
-import locationIcon from "../../shared/assets/images/icons/location_icon.png";
+} from "../../../app/styles/styled-components.tsx";
+import like from "../../../shared/assets/images/icons/like.svg";
+import starRating from "../../../shared/assets/images/icons/star_rating.png";
+import locationIcon from "../../../shared/assets/images/icons/location_icon.png";
 import {FormBooking} from "./booking-form.tsx";
-import {Camper} from "../types.ts";
+import {Camper} from "../../../entities/types.ts";
 
 export const Details = () => {
     const {id} = useParams<{ id: string }>();

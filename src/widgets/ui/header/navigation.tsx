@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
-import logoImage from '../../shared/assets/images/Logo.png'
-import {BasketIcon, Nav, NavHeader} from "../../app/styles/styled-components.tsx";
-import basketIcon from '../../shared/assets/images/icons/camper-basket.png'
+import logoImage from '../../../shared/assets/images/Logo.png'
+import {BasketIcon, Nav, NavHeader} from "../../../app/styles/styled-components.tsx";
+import basketIcon from '../../../shared/assets/images/icons/camper-basket.png'
 
 export const Navigation = () => {
     return (

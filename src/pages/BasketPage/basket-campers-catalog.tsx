@@ -1,4 +1,4 @@
-import {removeFromCart} from "../../features/cart/slice.tsx";
+import {removeFromCart} from "../../features/model/slice.tsx";
 import {RootState} from "../../app/redux/store.tsx";
 import {useDispatch, useSelector} from "react-redux";
 import {
@@ -10,7 +10,7 @@ import {
 } from "../../app/styles/styled-components.tsx";
 import starRating from "../../shared/assets/images/icons/star_rating.png";
 import locationIcon from "../../shared/assets/images/icons/location_icon.png";
-import {FeaturesAmenities} from "../../features/Features/features-amenities.tsx";
+import {FeaturesAmenities} from "../../features/ui/Features/features-amenities.tsx";
 import {Link} from "react-router-dom";
 import likeActive from "../../shared/assets/images/icons/like_yes.png";
 

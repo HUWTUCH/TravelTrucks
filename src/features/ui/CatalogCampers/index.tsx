@@ -4,17 +4,17 @@ import {
     HeaderDescriptionCamper,
     ImageCamper, LoadMore,
     MainCatalogCampers, ShowMore
-} from "../../app/styles/styled-components.tsx";
+} from "../../../app/styles/styled-components.tsx";
 import {useDispatch} from 'react-redux';
-import {addToCart} from '../cart/slice.tsx';
-import locationIcon from "../../shared/assets/images/icons/location_icon.png";
-import starRating from "../../shared/assets/images/icons/star_rating.png";
-import like from "../../shared/assets/images/icons/like.svg";
-import likeActive from "../../shared/assets/images/icons/like_yes.png";
+import {addToCart} from '../../model/slice.tsx';
+import locationIcon from "../../../shared/assets/images/icons/location_icon.png";
+import starRating from "../../../shared/assets/images/icons/star_rating.png";
+import like from "../../../shared/assets/images/icons/like.svg";
+import likeActive from "../../../shared/assets/images/icons/like_yes.png";
 import {FeaturesAmenities} from "../Features/features-amenities.tsx";
 import {useState} from "react";
 import {Link} from "react-router-dom";
-import {MainCampersProps} from "../../entities/types.ts";
+import {MainCampersProps} from "../../../entities/types.ts";
 
 export const MainCampers = ({campers}: MainCampersProps) => {
     const [visibleCount, setVisibleCount] = useState(5);

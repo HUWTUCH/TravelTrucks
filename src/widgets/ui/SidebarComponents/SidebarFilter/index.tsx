@@ -1,10 +1,10 @@
-import {FilterSidebar, SearchButton} from "../../../app/styles/styled-components.tsx";
+import {FilterSidebar, SearchButton} from "../../../../app/styles/styled-components.tsx";
 import {Location} from "../CampersLocation";
 import {Filters} from "../FiltersCampers";
 import {Form, Formik} from "formik";
 import {useEffect, useState} from "react";
-import {CampersResult, initialValues, SidebarProps} from "../../../entities/types.ts";
-import {useFetch} from "../../../shared/lib/hooks/use-fetch.tsx";
+import {CampersResult, initialValues, SidebarProps} from "../../../../entities/types.ts";
+import {useFetch} from "../../../../shared/lib/hooks/use-fetch.tsx";
 
 
 export const Sidebar = ({

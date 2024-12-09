@@ -1,4 +1,4 @@
-import {Navigation} from "../widgets/header/navigation.tsx";
+import {Navigation} from "../widgets/ui/header/navigation.tsx";
 import {Container} from "./styles/styled-components.tsx";
 import './styles/App.css'
 import {withRouter} from "./providers/with-router.tsx";

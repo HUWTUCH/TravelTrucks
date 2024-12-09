@@ -3,12 +3,12 @@ import {
     VehicleButton,
     VehicleContainerButtons,
     VehicleEquipmentContainer
-} from "../../app/styles/styled-components.tsx";
-import ac from '../../shared/assets/images/icons/ac.svg'
-import automatic from '../../shared/assets/images/icons/automatic.svg'
-import kitchen from '../../shared/assets/images/icons/kitchen.svg'
-import tv from '../../shared/assets/images/icons/tv.svg'
-import bathroom from '../../shared/assets/images/icons/bathroom.svg'
+} from "../../../app/styles/styled-components.tsx";
+import ac from '../../../shared/assets/images/icons/ac.svg'
+import automatic from '../../../shared/assets/images/icons/automatic.svg'
+import kitchen from '../../../shared/assets/images/icons/kitchen.svg'
+import tv from '../../../shared/assets/images/icons/tv.svg'
+import bathroom from '../../../shared/assets/images/icons/bathroom.svg'
 import {useField} from "formik";
 
 interface vehicleOptions {

@@ -1,7 +1,7 @@
 import {useOutletContext} from "react-router-dom";
-import {ReviewsBlock} from "../../app/styles/styled-components.tsx";
-import starRating from '../../shared/assets/images/icons/star_rating.png';
-import {Camper} from "../types.ts";
+import {ReviewsBlock} from "../../../app/styles/styled-components.tsx";
+import starRating from '../../../shared/assets/images/icons/star_rating.png';
+import {Camper} from "../../../entities/types.ts";
 
 export const Reviews = () => {
     const { camper } = useOutletContext<{ camper: Camper }>();
