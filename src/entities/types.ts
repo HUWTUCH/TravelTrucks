@@ -100,31 +100,5 @@ export const initialValues = {
 
 export interface CampersResult {
     total: number,
-    items: {
-        id: number,
-        name: string,
-        price: number,
-        rating: number;
-        location: string;
-        description: string;
-        engine: string;
-        transmission: string;
-        kitchen: boolean;
-        AC: boolean;
-        radio: boolean;
-        gas: boolean;
-        bathroom: boolean;
-        refrigerator: boolean;
-        water: boolean;
-        microwave: boolean;
-        gallery: {
-            thumb: string,
-            original: string,
-        }[],
-        reviews: {
-            reviewer_name: string,
-            reviewer_rating: number,
-            comment: string,
-        }[],
-    } []
+    items: Camper[],
 }
