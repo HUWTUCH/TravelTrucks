@@ -72,6 +72,7 @@ export const OverlayContent = styled.div`
         height: 56px;
         background-color: rgba(228, 72, 72, 1);
         text-align: center;
+        cursor: pointer;
         border-radius: 200px;
         &:hover {
             background-color: rgba(216, 67, 67, 1);
