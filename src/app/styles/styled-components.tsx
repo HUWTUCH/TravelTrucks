@@ -209,7 +209,7 @@ export const MainCatalogCampers = styled.div`
     flex: 1;
     gap: 32px;
 `;
-export const Camper = styled.div`
+export const CamperComponent = styled.div`
     display: flex;
     gap: 24px;
     padding: 24px;

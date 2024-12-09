@@ -1,21 +1,24 @@
 import {
-    Camper,
+    CamperComponent,
     DescriptionCamper,
     HeaderDescriptionCamper,
     ImageCamper, LoadMore,
     MainCatalogCampers, ShowMore
-} from "../../../app/styles/styled-components.tsx";
+} from "../../../../app/styles/styled-components.tsx";
 import {useDispatch} from 'react-redux';
-import {addToCart} from '../../model/slice.tsx';
-import locationIcon from "../../../shared/assets/images/icons/location_icon.png";
-import starRating from "../../../shared/assets/images/icons/star_rating.png";
-import like from "../../../shared/assets/images/icons/like.svg";
-import likeActive from "../../../shared/assets/images/icons/like_yes.png";
+import {addToCart} from '../../../../entities/user/slice.tsx';
+import locationIcon from "../../../../shared/assets/images/icons/location_icon.png";
+import starRating from "../../../../shared/assets/images/icons/star_rating.png";
+import like from "../../../../shared/assets/images/icons/like.svg";
+import likeActive from "../../../../shared/assets/images/icons/like_yes.png";
 import {FeaturesAmenities} from "../Features/features-amenities.tsx";
 import {useState} from "react";
 import {Link} from "react-router-dom";
-import {MainCampersProps} from "../../../entities/types.ts";
+import {Camper} from "../../../../entities/camper/types.ts";
 
+interface MainCampersProps {
+    campers: Camper[];
+}
 export const MainCampers = ({campers}: MainCampersProps) => {
     const [visibleCount, setVisibleCount] = useState(5);
     const dispatch = useDispatch();
@@ -40,7 +43,7 @@ export const MainCampers = ({campers}: MainCampersProps) => {
         <MainCatalogCampers>
             {campers.length > 0 ? (
                 campers.slice(0, visibleCount).map(camper => (
-                    <Camper key={camper.id}>
+                    <CamperComponent key={camper.id}>
                         <ImageCamper src={camper.gallery[0].original}/>
                         <DescriptionCamper>
                             <HeaderDescriptionCamper>
@@ -62,7 +65,7 @@ export const MainCampers = ({campers}: MainCampersProps) => {
                                 <ShowMore type='button'>Show More</ShowMore>
                             </Link>
                         </DescriptionCamper>
-                    </Camper>
+                    </CamperComponent>
                 ))
             ) : null}
             {!isAllCampersLoaded && (

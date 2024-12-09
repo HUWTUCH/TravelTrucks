@@ -1,8 +1,8 @@
 import {CatalogContainer} from "../../app/styles/styled-components.tsx";
 import {Sidebar} from "../../widgets/ui/SidebarComponents/SidebarFilter";
-import {MainCampers} from "../../features/ui/CatalogCampers";
+import {MainCampers} from "../../features/get-campers/ui/CatalogCampers";
 import {useState} from "react";
-import {Camper} from "../../entities/types.ts";
+import {Camper} from "../../entities/camper/types.ts";
 
 
 export const Catalog = () => {

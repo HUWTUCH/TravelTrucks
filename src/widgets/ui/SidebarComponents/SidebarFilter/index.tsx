@@ -3,9 +3,12 @@ import {Location} from "../CampersLocation";
 import {Filters} from "../FiltersCampers";
 import {Form, Formik} from "formik";
 import {useEffect, useState} from "react";
-import {CampersResult, initialValues, SidebarProps} from "../../../../entities/types.ts";
+import {Camper, CampersResult, initialValues} from "../../../../entities/camper/types.ts";
 import {useFetch} from "../../../../shared/lib/hooks/use-fetch.tsx";
 
+export interface SidebarProps {
+    setCampers: (camper: Camper[]) => void;
+}
 
 export const Sidebar = ({
                             setCampers,

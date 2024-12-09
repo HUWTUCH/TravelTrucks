@@ -1,11 +1,11 @@
 import {Route, Routes} from "react-router-dom";
-import {Home} from "./HomePage/HomePage.tsx";
-import {Catalog} from "./CatalogPage/CatalogPage.tsx";
-import {Basket} from "./BasketPage/basket-campers-catalog.tsx";
-import {Details} from "../features/ui/CamperDetails/CamperDetailsPage.tsx";
-import {Features} from "../features/ui/CamperDetails/features.tsx";
-import {Reviews} from "../features/ui/CamperDetails/reviews.tsx";
-import {NotFound} from "./ErrorPage/Error.tsx";
+import {Home} from "./Home";
+import {Catalog} from "./Catalog";
+import {Basket} from "./Basket";
+import {Details} from "./CamperDetails";
+import {Features} from "../features/get-campers/ui/camper-details/features.tsx";
+import {Reviews} from "../features/get-campers/ui/camper-details/reviews.tsx";
+import {NotFound} from "./Error";
 
 export const Routing = () => {
   return (

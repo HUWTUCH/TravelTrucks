@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import {Camper} from "../../entities/types.ts";
+import {Camper} from "../camper/types.ts";
 
 interface CartState {
     items: Camper[];

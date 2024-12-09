@@ -1,6 +1,6 @@
 import {FiltersContainer} from "../../../../app/styles/styled-components.tsx";
-import {VehicleEquipment} from "../../../../features/ui/VehicleEquipment";
-import {VehicleType} from "../../../../features/ui/VehicleType";
+import {VehicleEquipment} from "../../../../features/get-campers/ui/VehicleEquipment";
+import {VehicleType} from "../../../../features/get-campers/ui/VehicleType";
 
 
 export const Filters = () => {
