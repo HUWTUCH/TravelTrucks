@@ -1,5 +1,5 @@
 import {Field, Form, Formik} from "formik";
-import {FormikContainer} from "../../../../app/styles/styled-components.tsx";
+import {FormikContainer} from "../../../../shared/ui/styled-components.tsx";
 
 export const FormBooking = () => {
     return (

@@ -1,5 +1,5 @@
 import {useOutletContext} from "react-router-dom";
-import {ReviewsBlock} from "../../../../app/styles/styled-components.tsx";
+import {ReviewsBlock} from "../../../../shared/ui/styled-components.tsx";
 import starRating from '../../../../shared/assets/images/icons/star_rating.png';
 import {Camper} from "../../../../entities/camper/types.ts";
 

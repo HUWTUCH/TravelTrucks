@@ -4,7 +4,7 @@ import {
     CamperDetails,
     HeaderDescriptionCamperDetails,
     ImageCamper, Images, OutletFormContainer,
-} from "../../app/styles/styled-components.tsx";
+} from "../../shared/ui/styled-components.tsx";
 import like from "../../shared/assets/images/icons/like.svg";
 import starRating from "../../shared/assets/images/icons/star_rating.png";
 import locationIcon from "../../shared/assets/images/icons/location_icon.png";

@@ -1,6 +1,6 @@
 import {useOutletContext} from "react-router-dom";
-import {FeaturesAmenities} from "../Features/features-amenities.tsx";
-import {FeaturesBlock, VehicleDetails} from "../../../../app/styles/styled-components.tsx";
+import {FeaturesAmenities} from "../features/features-amenities.tsx";
+import {FeaturesBlock, VehicleDetails} from "../../../../shared/ui/styled-components.tsx";
 import {Camper} from "../../../../entities/camper/types.ts";
 
 export const Features = () => {

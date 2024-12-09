@@ -7,10 +7,10 @@ import {
     DescriptionCamper,
     HeaderDescriptionCamper,
     ImageCamper, ShowMore
-} from "../../app/styles/styled-components.tsx";
+} from "../../shared/ui/styled-components.tsx";
 import starRating from "../../shared/assets/images/icons/star_rating.png";
 import locationIcon from "../../shared/assets/images/icons/location_icon.png";
-import {FeaturesAmenities} from "../../features/get-campers/ui/Features/features-amenities.tsx";
+import {FeaturesAmenities} from "../../features/get-campers/ui/features/features-amenities.tsx";
 import {Link} from "react-router-dom";
 import likeActive from "../../shared/assets/images/icons/like_yes.png";
 

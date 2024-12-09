@@ -3,7 +3,7 @@ import {
     VehicleButton,
     VehicleContainerButtons,
     VehicleEquipmentContainer
-} from "../../../../app/styles/styled-components.tsx";
+} from "../../../../shared/ui/styled-components.tsx";
 import ac from '../../../../shared/assets/images/icons/ac.svg'
 import automatic from '../../../../shared/assets/images/icons/automatic.svg'
 import kitchen from '../../../../shared/assets/images/icons/kitchen.svg'

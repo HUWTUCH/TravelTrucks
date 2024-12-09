@@ -1,6 +1,6 @@
-import {CatalogContainer} from "../../app/styles/styled-components.tsx";
-import {Sidebar} from "../../widgets/ui/SidebarComponents/SidebarFilter";
-import {MainCampers} from "../../features/get-campers/ui/CatalogCampers";
+import {CatalogContainer} from "../../shared/ui/styled-components.tsx";
+import {Sidebar} from "../../features/get-campers/ui/sidebar-filter";
+import {MainCampers} from "../../features/get-campers/ui/catalog-campers";
 import {useState} from "react";
 import {Camper} from "../../entities/camper/types.ts";
 

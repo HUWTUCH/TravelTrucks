@@ -1,6 +1,6 @@
-import {FilterSidebar, SearchButton} from "../../../../app/styles/styled-components.tsx";
-import {Location} from "../CampersLocation";
-import {Filters} from "../FiltersCampers";
+import {FilterSidebar, SearchButton} from "../../../../shared/ui/styled-components.tsx";
+import {Location} from "../campers-location";
+import {Filters} from "../filters-campers";
 import {Form, Formik} from "formik";
 import {useEffect, useState} from "react";
 import {Camper, CampersResult, initialValues} from "../../../../entities/camper/types.ts";

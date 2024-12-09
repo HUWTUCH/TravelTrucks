@@ -1,4 +1,4 @@
-import {FeaturesContainer, FeaturesItem, FeaturesList} from "../../../../app/styles/styled-components.tsx";
+import {FeaturesContainer, FeaturesItem, FeaturesList} from "../../../../shared/ui/styled-components.tsx";
 import KitchenIcon from '../../../../shared/assets/images/icons/kitchen.svg';
 import ACIcon from '../../../../shared/assets/images/icons/ac.svg';
 import RadioIcon from '../../../../shared/assets/images/icons/radio.svg';

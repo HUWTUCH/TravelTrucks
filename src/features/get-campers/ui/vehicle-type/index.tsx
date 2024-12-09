@@ -3,7 +3,7 @@ import {
     VehicleButton,
     VehicleContainerButtons,
     VehicleTypeContainer
-} from "../../../../app/styles/styled-components.tsx";
+} from "../../../../shared/ui/styled-components.tsx";
 import van from '../../../../shared/assets/images/icons/van.svg';
 import fullyIntegrated from '../../../../shared/assets/images/icons/fully-integrated.png';
 import alcove from '../../../../shared/assets/images/icons/alcove.png';

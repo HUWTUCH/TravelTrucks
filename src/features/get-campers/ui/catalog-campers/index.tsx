@@ -4,14 +4,14 @@ import {
     HeaderDescriptionCamper,
     ImageCamper, LoadMore,
     MainCatalogCampers, ShowMore
-} from "../../../../app/styles/styled-components.tsx";
+} from "../../../../shared/ui/styled-components.tsx";
 import {useDispatch} from 'react-redux';
 import {addToCart} from '../../../../entities/user/slice.tsx';
 import locationIcon from "../../../../shared/assets/images/icons/location_icon.png";
 import starRating from "../../../../shared/assets/images/icons/star_rating.png";
 import like from "../../../../shared/assets/images/icons/like.svg";
 import likeActive from "../../../../shared/assets/images/icons/like_yes.png";
-import {FeaturesAmenities} from "../Features/features-amenities.tsx";
+import {FeaturesAmenities} from "../features/features-amenities.tsx";
 import {useState} from "react";
 import {Link} from "react-router-dom";
 import {Camper} from "../../../../entities/camper/types.ts";
@@ -38,7 +38,7 @@ export const MainCampers = ({campers}: MainCampersProps) => {
 
     const isAllCampersLoaded = visibleCount >= campers.length;
 
-    console.log('Campers in CatalogCampers', campers);
+    console.log('Campers in catalog-campers', campers);
     return (
         <MainCatalogCampers>
             {campers.length > 0 ? (

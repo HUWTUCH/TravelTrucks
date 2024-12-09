@@ -1,4 +1,4 @@
-import {LocationInput, LocationsContainer} from "../../../../app/styles/styled-components.tsx";
+import {LocationInput, LocationsContainer} from "../../../../shared/ui/styled-components.tsx";
 import locationIcon from "../../../../shared/assets/images/icons/location_icon.png"
 import * as React from "react";
 import {Field} from "formik";
