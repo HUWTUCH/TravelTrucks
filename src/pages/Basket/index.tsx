@@ -3,7 +3,7 @@ import {RootState} from "../../app/redux/store.tsx";
 import {useDispatch, useSelector} from "react-redux";
 import {
     BasketComponent,
-    Camper,
+    CamperComponent,
     DescriptionCamper,
     HeaderDescriptionCamper,
     ImageCamper, ShowMore
@@ -27,7 +27,7 @@ export const Basket = () => {
             <h2>Your Like Campers</h2>
             {cartItems.length > 0 ? (
                 cartItems.map(camper => (
-                    <Camper key={camper.id}>
+                    <CamperComponent key={camper.id}>
                         <ImageCamper src={camper.gallery[0].original}/>
                         <DescriptionCamper>
                             <HeaderDescriptionCamper>
@@ -49,7 +49,7 @@ export const Basket = () => {
                                 <ShowMore type='button'>Show More</ShowMore>
                             </Link>
                         </DescriptionCamper>
-                    </Camper>
+                    </CamperComponent>
                 ))
             ) : null}
         </BasketComponent>
