@@ -58,9 +58,18 @@ export interface FeaturesAmenitiesProps {
 }
 export interface SidebarProps {
     setCampers: (camper: {
-        id: number; name: string; price: number; rating: number;
+        consumption: any;
+        tank: any;
+        height: any;
+        width: any;
+        length: any;
+        form: string;
+        id: number;
+        name: string;
+        price: number;
+        rating: number;
+        location: string;
         description: string;
-        location: string; gallery: { thumb: string; original: string }[];
         engine: string;
         transmission: string;
         kitchen: boolean;
@@ -71,10 +80,14 @@ export interface SidebarProps {
         refrigerator: boolean;
         water: boolean;
         microwave: boolean;
+        gallery: {
+            thumb: string;
+            original: string;
+        }[];
         reviews: {
-            reviewer_name: string,
-            reviewer_rating: number,
-            comment: string,
+            reviewer_name: string;
+            reviewer_rating: number;
+            comment: string;
         }[],
     }[]) => void,
 }

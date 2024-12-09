@@ -4,13 +4,18 @@ import {MainCampers} from "../../features/CatalogCampers";
 import {useState} from "react";
 
 interface Camper {
+    consumption: any;
+    tank: any;
+    height: any;
+    width: any;
+    length: any;
+    form: string;
     id: number;
     name: string;
     price: number;
     rating: number;
     location: string;
     description: string;
-    gallery: { thumb: string; original: string; }[];
     engine: string;
     transmission: string;
     kitchen: boolean;
@@ -21,11 +26,15 @@ interface Camper {
     refrigerator: boolean;
     water: boolean;
     microwave: boolean;
+    gallery: {
+        thumb: string;
+        original: string;
+    }[];
     reviews: {
-        reviewer_name: string,
-        reviewer_rating: number,
-        comment: string,
-    }[],
+        reviewer_name: string;
+        reviewer_rating: number;
+        comment: string;
+    }[];
 }
 
 
