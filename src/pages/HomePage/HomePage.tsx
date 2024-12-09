@@ -1,4 +1,4 @@
-import {BgImage, BgImageContainer, OverlayContent} from "../../components/styled-components/styled-components.tsx";
+import {BgImage, BgImageContainer, OverlayContent} from "../../app/styles/styled-components.tsx";
 import {useNavigate} from "react-router-dom";
 
 export const Home = () => {
